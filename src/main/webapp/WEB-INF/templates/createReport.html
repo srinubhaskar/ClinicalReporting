@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Bootstrap Admin Template : Two Page</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<div id="wrapper">
+<div id="main">
+<!-- <div class="inner"> -->
+	<h1>Patient Report</h1>
+
+	<div class="row uniform">
+		<div class="1u 12u$(xsmall)">
+			<label th:text="#{label.reg.firstname}">Firstname</label> 
+		</div>
+		<div class="3u 12u$(xsmall)">
+			<input type="text" placeholder="Firstname" />
+		</div>	
+		<div class="1u 12u$(xsmall)">
+			<label th:text="#{label.reg.lastname}">Lastname</label> 
+			</div>
+		<div class="3u 12u$(xsmall)">	
+			<input type="text"  placeholder="Lastname" />
+		</div>
+		<div class="1u 12u$(xsmall)">
+			<label th:text="#{label.report.gender}">GenderandAge</label> 
+			</div>
+		<div class="1u 12u$(xsmall)">	
+			<input type="text"  placeholder="Gender and Age" />
+		</div>
+	</div>
+	
+	<div class="row uniform">
+	
+	<div class="1u 12u$(xsmall)">
+			<label th:text="#{label.report.referredby}">ReferredByDoctor</label> 
+		</div>
+		<div class="3u 12u$(xsmall)">
+			<input type="text" placeholder="ReferredBy" />
+		</div>	
+	<div class="1u 12u$(xsmall)">
+			<label th:text="#{label.report.date}">Date</label> 
+		</div>
+		<div class="3u 12u$(xsmall)">
+			<input type="text" placeholder="Date" />
+		</div>	
+		
+	</div>
+	
+
+	<div class="4u 12u$(xsmall)">
+		<div class="select-wrapper">
+			<select name="demo-category" id="demo-category">
+				<option value="">value1</option>
+				<option value="1">Manufacturing</option>
+				<option value="1">Shipping</option>
+				<option value="1">Administration</option>
+				<option value="1">Human Resources</option>
+			</select>
+		</div>
+</div>
+</div>
+</div>
+<!-- </div> -->
+
+</body>
+</html>

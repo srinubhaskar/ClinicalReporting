@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vijaya Durga Clinic</title>
+
+<link rel="stylesheet" href="../static/css/bootstrap.css"
+	th:href="@{static/css/bootstrap.css}" />
+<link rel="stylesheet" href="../static/css/font-awesome.css"
+	th:href="@{static/css/font-awesome.css}" />
+<link rel="stylesheet" href="../static/css/custom.css"
+	th:href="@{static/css/custom.css}" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css' />
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="fa fa-square-o "></i>&nbsp;VIJAYA DURGA ClINIC</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">See Website</a></li>
+                        <li><a href="#">Open Ticket</a></li>
+                        <li><a href="#">Report Bug</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+	<div id="wrapper" >
+	<div id="page-inner">
+<h3>Registration </h3>
+	<form th:action="@{/register}" method="post">
+            <div class="form-group row">
+				<label th:text="#{label.reg.username}" class="col-sm-2 col-form-label">UserName</label>
+			<div class="col-sm-8">
+				<input type="text" th:field="*{authVo.username}" class="form-control" placeholder="Username"/>
+			</div>
+			</div>
+			<div class="form-group row">
+			<label th:text="#{label.reg.firstname}" class="col-sm-2 col-form-label">FirstName</label> 
+			<div class="col-sm-8">
+			<input type="text" th:field="*{authVo.firstname}" class="form-control" placeholder="Username" />
+		    </div>
+			</div>
+			<div class="form-group row">
+			<label th:text="#{label.reg.lastname}" class="col-sm-2 col-form-label">LastName</label> 
+			<div class="col-sm-8">
+			<input type="text" th:field="*{authVo.lastname}" class="form-control" placeholder="Username" />
+			</div>
+			</div>
+			<div class="form-group row">
+			<label th:text="#{label.reg.password}" class="col-sm-2 col-form-label">Password</label> 
+			<div class="col-sm-8">
+			<input type="password" th:field="*{authVo.password}" class="form-control" placeholder="Password" />
+			</div>
+			</div>
+		
+			<div class="form-group row">
+			<label th:text="#{label.reg.gender}" class="col-sm-2 col-form-label">Gender</label> 
+			<div class="col-sm-8">
+			<input type="text" th:field="*{authVo.gender}" class="form-control" placeholder="Username" />
+			</div>
+			</div>
+			<div class="form-group row">
+			<label th:text="#{label.reg.addressline1}" class="col-sm-2 col-form-label">AddressLine1</label> 
+			<div class="col-sm-8">
+			<input type="text" th:field="*{authVo.contact.addressline1}" class="form-control" placeholder="Username" />
+			</div>
+			</div>
+			<div class="form-group row">
+			<label th:text="#{label.reg.addressline2}" class="col-sm-2 col-form-label">AddressLine2</label> 
+			<div class="col-sm-8">
+			<input type="text" th:field="*{authVo.contact.addressline2}" class="form-control" placeholder="Username" />
+			</div>
+			</div>
+			<div class="form-group row">
+			<label th:text="#{label.reg.state}" class="col-sm-2 col-form-label">State</label> 	
+			<div class="col-sm-8">
+			<input type="text" th:field="*{authVo.contact.state}" class="form-control" placeholder="Username" />
+			</div>
+			</div>
+			<div class="form-group row">
+			<label th:text="#{label.reg.country}" class="col-sm-2 col-form-label">Country</label> 
+			<div class="col-sm-8">
+			<input type="text" th:field="*{authVo.contact.country}" class="form-control" placeholder="Username" />
+			</div>
+			</div>
+			<div class="form-group row">
+			<label th:text="#{label.reg.email}" class="col-sm-2 col-form-label">Email</label> 
+			<div class="col-sm-8">
+			<input type="text" th:field="*{authVo.contact.email}" class="form-control" placeholder="Username" />
+			</div>
+			</div>
+			<div class="form-group row">
+			<label th:text="#{label.reg.phone}" class="col-sm-2 col-form-label">Phone</label> 
+			<div class="col-sm-8">
+			<input type="text" th:field="*{authVo.contact.phone}" class="form-control" placeholder="Username" />
+			</div>
+			</div>
+			<div class="form-group row">
+			<label th:text="#{label.reg.zip}" class="col-sm-2 col-form-label">ZIP</label> 	
+			<div class="col-sm-8">
+			<input type="text" th:field="*{authVo.contact.zip}" class="form-control" placeholder="Username" />
+			</div>
+			</div>
+			<div class="row">
+			<div class="actions">
+			<button type="submit" class="button">Submit</button>
+			</div>
+			</div>
+	</form>
+</div>
+</div>
+</body>
+</html>
