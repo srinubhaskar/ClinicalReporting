@@ -31,7 +31,7 @@ body {
     width:100%;
     margin:10px 20px 10px 0px;
     background-color:#fff!important;
-    padding:10px;
+    padding:25px;
     min-height:1200px;
 }
 
@@ -176,7 +176,7 @@ color: #fff;
 }
 
 .no-boder {
-border: 1px solid #f3f3f3;
+border: 1px solid #00BFFF;
 }
 .back-footer-blue {
 background-color: #7479E6;
@@ -237,6 +237,10 @@ border-radius: 0px;
 
    .navbar {
  border-radius: 0px; 
+}
+
+.detail{
+	padding:10px;
 }
    
 }

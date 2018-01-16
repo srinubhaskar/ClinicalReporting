@@ -26,7 +26,7 @@ private static final Logger logger = LoggerFactory.getLogger( HomeController.cla
 
 	@Autowired
 	private UserDetailsService userDetailService;
-	
+	              
 	@Autowired
 	private UserService userService;
 
@@ -36,10 +36,10 @@ private static final Logger logger = LoggerFactory.getLogger( HomeController.cla
 		UserAuthVO authVo = new UserAuthVO();
 		model.addAttribute("authVo",authVo);
 		return "index";
-	}
+	} 
 	
 /*	@RequestMapping(value="authenticate",method={RequestMethod.GET,RequestMethod.POST})
-	public String authenticate(UserAuthVO authVo){
+	public String authenticate(UserAuthVO authVo){       
 		
 		logger.info("Usrname::  "+authVo.getUsername());
 		logger.info("Password::  "+authVo.getPassword());
@@ -49,6 +49,7 @@ private static final Logger logger = LoggerFactory.getLogger( HomeController.cla
 		}
 		return "/hello";
 	}*/
+	
 	
 	@RequestMapping(value="/success", method=RequestMethod.POST)
 	public ModelAndView success(ModelMap map){
@@ -66,7 +67,7 @@ private static final Logger logger = LoggerFactory.getLogger( HomeController.cla
     public String index(Principal principal) {
         return principal != null ? "welcome" : "index";
     }
-      
+         
 	@PostMapping("/register")
 	public String register(UserAuthVO authVo){
 		userService.createUser(authVo);

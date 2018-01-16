@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<div th:fragment="footer">
+
+
+<head th:fragment="footer">
 	<!-- JQUERY SCRIPTS -->
-	<script src="../static/js/jquery-1.10.2.js" th:href="@{static/js/jquery-1.10.2.js}"></script>
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<!-- CUSTOM SCRIPTS -->
+	<script src="../static/js/custom.js" th:href="@{static/js/custom.js}"></script>
+	<!-- <script src="../static/js/jquery-1.10.2.js" th:href="@{static/js/jquery-1.10.2.js}"></script>  -->
 	<!-- BOOTSTRAP SCRIPTS -->
 	<script src="../static/js/bootstrap.min.js" th:href="@{static/js/bootstrap.min.js}"></script>
+	
 	<!-- METISMENU SCRIPTS -->
 	<script src="../static/js/jquery.metisMenu.js" th:href="@{static/css/jquery.metisMenu.js}"></script>
-	<!-- CUSTOM SCRIPTS -->
-	<script src="../static/js/custom.js" th:href="@{static/css/custom.js}"></script>
-</div>
+	
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+	
+	
+
+<script type="text/javascript">
+
+
+$('document').ready(function() {
+   // $('#datetimepicker1').datetimepicker();
+    
+});
+</script>
+</head>
+
+
 </html>

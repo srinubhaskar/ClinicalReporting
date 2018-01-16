@@ -16,7 +16,7 @@ public class ResultType {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	@Column(unique=true,nullable=false)
-	private String resultName;
+	private String resultName; 
 	@ManyToOne
 	@JoinColumn(name = "clinicalTestId", nullable = false)
 	private ClinicalTest clinicalTest; 

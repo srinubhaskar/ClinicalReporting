@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="welcome">
+
+
+<div layout:fragment="functionality">
+
+	<h2>Create Test Name</h2>
+	<form th:action="@{/createtestname}" method="post">
+		<div class="form-group row">
+
+			<div class="col-sm-6 col-md-offset-3">
+				<input type="text" class="form-control"
+					th:field="*{clinicaltestVO.testName}" placeholder="Test Name" />
+			</div>
+			<div class="col-md-2 col-md-offset-5">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+		<div>
+			<div class="col-md-6">
+				<h5>List of Clinical tests</h5>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Test Name</th>
+								<th> Delete </th>
+							</tr>
+						</thead>
+						<tbody>
+								<tr th:each ="smokeTest: ${clinicaltestVO.testNameList}" class="info">
+									<td>2</td>
+									<td th:text="${smokeTest}">2.41</td>
+									<td> Delete </td>
+								</tr>
+
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="row">
+			<div class="col-md-2 col-md-offset-5">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div> -->
+	</form>
+</div>
+
+</html>

@@ -18,7 +18,7 @@ public abstract class BaseDAO<Element, Key extends Serializable> {
 	public void saveOrUpdate(final Object entity) {
 		getCurrentSession().saveOrUpdate(entity);
 	}
-	
+	 
 	public Object find(Class<Element> clazz, Key id) {
 		return getCurrentSession().get(clazz, id);
 	}

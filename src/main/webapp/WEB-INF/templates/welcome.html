@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
-	<div th:include="fragments/header :: header"></div>
+<div th:include="fragments/header :: header">
+</div>
 </head>
 <body>
-<div id="wrapper">
+	<div id="wrapper">
 
-<!-- Top nav -->
-<div th:include="fragments/topnav :: topnav"></div>
-<div>
-<!-- NAV fragment  -->
-<div th:include="fragments/leftnav :: leftnav"></div>
-</div>
-<div>
-<!-- BODY  -->
-        <div id="page-wrapper">
-            <div id="page-inner">
-            
-            </div>
-            </div>
-</div>
-
-
-
-
+		<!-- Top nav -->
+		<div th:include="fragments/topnav :: topnav"></div>
+		<div>
+			<!-- NAV fragment  -->
+			<div th:include="fragments/leftnav :: leftnav"></div>
+		</div>
+		<div>
+			<!-- BODY  -->
+			<div id="page-wrapper">
+				<div id="page-inner">
+				
+				<div layout:fragment="functionality"></div>
+				
+				</div>
+				
+			</div>
 
 
-<!-- Add anything above this for body -->
-<div th:include="fragments/footer :: footer"></div>
-</div>
+
+
+
+
+
+			<!-- Add anything above this for body -->
+			<div th:include="fragments/footer :: footer"></div>
+		</div>
+		</div>
 </body>
 </html>

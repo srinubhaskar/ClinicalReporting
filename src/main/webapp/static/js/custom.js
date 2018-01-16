@@ -48,6 +48,9 @@
 
     $(document).ready(function () {
         mainApp.main_fun();
+        $('#datetimepicker1').datepicker();
     });
 
 }(jQuery));
+
+
