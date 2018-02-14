@@ -16,7 +16,7 @@ public class UserDAO extends BaseDAO<ClinicUser, Integer>{
 	public ClinicUser findByid(Integer id) {
 		return (ClinicUser)find(ClinicUser.class, id);
 	}
-	
+	 
 	public ClinicUser find(String userName){
 		@SuppressWarnings("rawtypes")
 		Query hibernateQuery = super.getCurrentSession().createQuery(

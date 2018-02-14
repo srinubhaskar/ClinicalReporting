@@ -39,7 +39,7 @@ import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.TemplateResolver;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
-
+ 
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.vijayadurga.clinic")

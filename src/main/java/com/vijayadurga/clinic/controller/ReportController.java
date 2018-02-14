@@ -41,6 +41,9 @@ private static final Logger logger = LoggerFactory.getLogger( HomeController.cla
 		List<String> names= new ArrayList<String>();
 		clinicaltestService.getAllTests().forEach(item->names.add(item.getTestName()));
 		clinicaltestVO.setTestNameList(names);
+		ClinicalTestResultNameVO clnclrstnameVO=new ClinicalTestResultNameVO();
+		clnclrstnameVO.setTestList(clinicaltestService.getAllTests());
+		model.addAttribute("clnclrstnameVO",clnclrstnameVO);
 		model.addAttribute("clinicaltestVO",clinicaltestVO);
 		logger.info("in Create Test");
 		return "clinicalTestName";    
